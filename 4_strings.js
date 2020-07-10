@@ -27,3 +27,21 @@ console.log(str.trimStart())
 
 console.log(str.padStart(10, '1234'))
 console.log(str.padEnd(8, 'abc'))
+
+
+/* 2020 */
+
+function tag(strings, name, age) {
+  const [s1, s2, s3] = strings
+  const ageStr = age > 42 ? 'старшим' : 'младшим'
+  return `${s1}${name}${s2}${ageStr}${s3}`
+}
+
+const person = {
+  name: 'NoName',
+  age: 50
+}
+
+const output = tag`Человек по имени ${person.name} является ${person.age} в семье`
+
+console.log(output)

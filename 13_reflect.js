@@ -12,7 +12,7 @@ class ProtoStudent {
   university = 'Oxford'
 }
 
-const student = Reflect.construct(Student, ['Igor'])
+const student = Reflect.construct(Student, ['Yurii'])
 
 // console.log(student.__proto__ === ProtoStudent.prototype)
 
