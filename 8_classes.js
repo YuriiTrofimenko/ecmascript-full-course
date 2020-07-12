@@ -1,4 +1,4 @@
-class Person {
+/* class Person {
   type = 'human'
 
   constructor(name) {
@@ -10,13 +10,13 @@ class Person {
   }
 }
 
-// const max = new Person('Max')
-// max.greet()
-// console.log(max.type)
+const max = new Person('Yurii')
+max.greet()
+console.log(max.type)
 
-// console.log(max.__proto__ === Person.prototype)
+// console.log(max.__proto__ === Person.prototype) */
 
-class Programmer extends Person {
+/* class Programmer extends Person {
   constructor(name, job) {
     super(name)
 
@@ -41,7 +41,7 @@ class Programmer extends Person {
   }
 }
 
-const fronted = new Programmer('Max', 'Frontend')
+const fronted = new Programmer('Yurii', 'Frontend')
 // console.log(fronted)
 // fronted.greet()
 // console.log(fronted.job)
@@ -60,7 +60,7 @@ console.log(res)
 
 // const util = new Util()
 //
-// console.log(util.average(1, 1, 2, 3, 5, 8, 13))
+// console.log(util.average(1, 1, 2, 3, 5, 8, 13)) */
 
 
 /* 2020 */
@@ -69,7 +69,7 @@ class Person {
   static type = 'HUMAN'
   static #area = 'EARTH'
   name = 'unknown name'
-  #year = 1993
+  #year = 1986
 
   constructor(name) {
     this.name = name
@@ -90,10 +90,10 @@ class Person {
   }
 }
 
-const person = new Person('Maxim')
+const person = new Person('Yurii')
 console.log(person.name)
 console.log(person.age)
-person.age = 26
+person.age = 33
 console.log(person.age)
 console.log(Person.type)
 console.log(Person.printArea())

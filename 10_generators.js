@@ -1,5 +1,8 @@
-const array = [10, 20, 30, 40]
-const str = 'Hello'
+/* Генератор-функции способны возвращать более одного результата
+и принимать новые аргументы в процессе возврата результата */
+
+// const array = [10, 20, 30, 40]
+// const str = 'Hello'
 
 // console.log(array[Symbol.iterator])
 // console.log(str[Symbol.iterator])
@@ -39,7 +42,7 @@ const str = 'Hello'
 // }
 
 // Generator
-function *gen(num = 4) {
+/* function *gen(num = 4) {
   for (let i = 0; i < num; i++) {
     try {
       yield i
@@ -53,8 +56,17 @@ const iter = gen(3)
 console.log(iter.next())
 console.log(iter.throw('My Error'))
 console.log(iter.next())
-console.log(iter.next())
+console.log(iter.next()) */
 
 // for (let i of gen(4)) {
 //   console.log(i)
 // }
+
+function* gen2(x = 1) {
+  let y = yield x ** 2
+  yield y ** 3
+}
+
+const iter2 = gen2(3)
+console.log(iter2.next())
+console.log(iter2.next(2))

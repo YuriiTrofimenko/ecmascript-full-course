@@ -1,3 +1,5 @@
+/* Тип-оболчка Symbol для создания уникальных значений с одинаковым именем */
+
 const symbol = Symbol('demo')
 const other = Symbol('demo')
 

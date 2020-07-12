@@ -4,9 +4,9 @@
 //   }, 500)
 // })
 
-const delay = ms => new Promise(((resolve, reject) => {
+/* const delay = ms => new Promise(((resolve, reject) => {
   setTimeout(() => resolve(`Done! ${ms}`), ms)
-}))
+})) */
 
 // delay(1000)
 //   .then(data => delay(500))
@@ -25,7 +25,7 @@ const delay = ms => new Promise(((resolve, reject) => {
 //
 // asyncDelay()
 
-Promise.all([
+/* Promise.all([
   delay(1000),
   delay(500),
   delay(2000)
@@ -35,7 +35,7 @@ Promise.race([
   delay(1000),
   delay(500),
   delay(2000)
-]).then(data => console.log(data))
+]).then(data => console.log(data)) */
 
 
 /* 2020 */
